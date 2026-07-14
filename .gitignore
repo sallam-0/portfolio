@@ -1,6 +1,51 @@
-# Vercel build cache
-.vercel
+# Dependencies
+node_modules/
 
-# OS files
+# Build output
+dist/
+dist-ssr/
+build/
+
+# Vite & environment
+*.local
+.env
+.env.*
+!.env.example
+
+# TanStack temp files
+.tanstack/tmp/
+
+# Vercel
+.vercel/
+
+# TanStack Start & Nitro Build Output
+.output/
+.vinxi/
+
+# Original uncompressed assets / markdown
+/projects/
+
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# npm lockfile (project uses Bun)
+package-lock.json
+
+# TypeScript
+*.tsbuildinfo
+
+# Editor & OS artifacts
 .DS_Store
 Thumbs.db
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
