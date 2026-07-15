@@ -22,9 +22,9 @@ function ProjectCard({ p, isActive }: { p: Project; isActive: boolean }) {
       >
         {/* Architecture diagram thumbnail */}
         <div className="relative aspect-[16/9] w-full bg-gradient-to-br from-ash to-ink overflow-hidden">
-          {p.images && p.images.length > 0 ? (
+          {p.thumbnail ? (
             <img
-              src={p.images[0].src}
+              src={p.thumbnail}
               alt={p.title}
               className="absolute inset-0 h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
               loading="lazy"

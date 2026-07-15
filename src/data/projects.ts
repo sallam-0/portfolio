@@ -15,6 +15,7 @@ export type Project = {
   highlights: string[];
   role: string;
   tech: TechKey[];
+  thumbnail: string;
   images: ProjectImage[];
   githubUrl: string | null;
   demoUrl: string | null;
@@ -40,6 +41,7 @@ export const dataEngineeringProjects: Project[] = [
     ],
     role: "Sole data engineer — designed architecture, built scraper engine, streaming pipeline, API service, and dbt transforms.",
     tech: ["python", "gcp", "bigquery", "dbt", "airflow", "docker"],
+    thumbnail: "/projects/gcp-platform/Data_Pipeline_thumb.webp",
     images: [
       { src: "/projects/gcp-platform/Data_Pipeline.webp", caption: "End-to-end data pipeline architecture" },
     ],
@@ -65,6 +67,7 @@ export const dataEngineeringProjects: Project[] = [
     ],
     role: "Data engineer — designed dimensional model (Kimball methodology), built SSIS packages, created Power BI dashboard.",
     tech: ["sql", "python"],
+    thumbnail: "/projects/ecommerce-ssis/SSIS_thumb.webp",
     images: [
       { src: "/projects/ecommerce-ssis/SSIS.webp", caption: "SSIS ETL package flow" },
       { src: "/projects/ecommerce-ssis/Star_Schema_Diagram.webp", caption: "Star schema dimensional model" },
@@ -92,6 +95,7 @@ export const dataEngineeringProjects: Project[] = [
     ],
     role: "Sole data engineer — designed Lambda architecture, built ingestion, Spark ETL, orchestration, and serving layers.",
     tech: ["kafka", "spark", "airflow", "docker", "python", "sql"],
+    thumbnail: "/projects/egx-pipeline/egx_architecture_diagram_thumb.webp",
     images: [
       { src: "/projects/egx-pipeline/egx_architecture_diagram.webp", caption: "Lambda architecture diagram" },
     ],
@@ -117,6 +121,7 @@ export const dataEngineeringProjects: Project[] = [
     ],
     role: "Sole data engineer — designed CDC architecture, built Flink pipeline, trained ML model, created dbt warehouse.",
     tech: ["kafka", "python", "snowflake", "dbt", "airflow", "docker"],
+    thumbnail: "/projects/fraud-detection/Pipeline_Flow_thumb.webp",
     images: [
       { src: "/projects/fraud-detection/Pipeline_Flow.webp", caption: "Animated pipeline flow" },
       { src: "/projects/fraud-detection/ML_pipeline.webp", caption: "ML training and scoring pipeline" },
@@ -147,6 +152,7 @@ export const dataAnalyticsProjects: Project[] = [
     ],
     role: "Data analyst — designed dashboard layout, built DAX measures, created interactive reports.",
     tech: ["sql", "python"],
+    thumbnail: "/projects/ecommerce-dashboard/Executive_Page_thumb.webp",
     images: [
       { src: "/projects/ecommerce-dashboard/Executive_Page.webp", caption: "Executive Overview — KPIs and revenue trends" },
       { src: "/projects/ecommerce-dashboard/Sales_Page.webp", caption: "Sales Deep Dive — category, supplier, campaign breakdown" },
@@ -175,6 +181,7 @@ export const dataAnalyticsProjects: Project[] = [
     ],
     role: "Data analyst — designed dashboard, built DAX measures for technical indicators, created interactive visuals.",
     tech: ["sql", "python"],
+    thumbnail: "/projects/egx-dashboard/market_overview_thumb.webp",
     images: [
       { src: "/projects/egx-dashboard/market_overview.webp", caption: "Market Overview — KPIs, volume, daily movers" },
       { src: "/projects/egx-dashboard/symbol_detail.webp", caption: "Symbol Detail — Bollinger, SMA/EMA, MACD, RSI" },
